@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Life Calculator Entry Page</title>
+    <link href="./Resources/css/index.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="http://cdn.onlinewebfonts.com/svg/img_380402.png">
+    <script src="./Resources/js/LifeTime.js"></script>
+    <script src="./Resources/js/CustomAnn.js"></script>
+    <script src="./Resources/js/DefaultAnn.js"></script>
+    <script src="./Resources/js/Methods.js"></script>
+    </head>
+	
+    <body>
+   
+      <h1>LifeTime</h1>
+      <br>
+      <span>Use lifetime before clicking submit</span>
+      <form method="get" name="form" action="./Resources/php/index.php">
+        <input type="text" placeholder="Enter Name" name="data1" required>
+        <input type='email' placeholder="Enter Email" name="data2" required>
+        <div class="hidden">
+        <input type='text'  id="data" name="date" required>
+        <input type="text"  name="lifetime" id="lifetime" required>
+        <input type='text'  id="cdata" name="cdate" required>
+        <input type="text" name="birthhour" id="birthhour">
+        <input type="submit" button id="submit">
+      </div>
+        <button onclick="user.send()">Submit</button>
+     </form>
+     
+     <div class="block1">
+      <div class="element1">
+      <span>required</span>
+      <br>
+      <input type="date" placeholder="Enter Birth Date" id="birthDate" required>
+      <br>
+      <button onclick="LifeTimeGet()" class="Green">Click To Get Your LifeTime</button>
+      <br>
+      <br>
+    </div>
+
+    <div class="element2">
+      <span>Optional</span>
+      <br>
+      <input type="time" placeholder="Enter Specific Birth Time" id="birthHour" required>
+      <br>
+      <button onclick="user.removeClutter()" id="Red">Click To Remove The Data</button>
+      <br>
+      
+      <br>
+    </div>
+    </div>
+<div class="block2">
+  <div class="element1">
+    <span>Optional</span>
+    <br>
+      <input id="Ann" type="text" placeholder="Set Anniversary Below">
+      <br>
+      <button onclick="GetAnn()" class="Green">Click For Custom Anniversary Time!</button>
+  </div>
+    
+
+      <div class="element2">
+      <span>Optional</span>
+      <br>
+      <span>Mystery Anniverary Button</span>
+      <br>
+      <button onclick="IFS()" id="l" class="Green">Click For Anniversary Time!</button>
+    </div>
+    </div>
+ <div class="pad">
+
+ </div>
+     
+
+    </body>
+</html>
