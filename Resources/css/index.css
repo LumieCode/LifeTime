@@ -1,0 +1,81 @@
+body {
+    background-color: #9cc5d3;
+    
+  }
+  
+.Green{
+    background-color: rgb(14, 230, 14);
+    border-width: 3px;
+    padding: 3px;
+    cursor: pointer;
+}   
+#Red{
+    background-color:red;
+    border-width: 3px;
+    size: 4px;
+    padding: 3px;
+    cursor: pointer;
+}
+input{
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 4px;
+    z-index: 1;
+}
+p{  
+    padding-top: 0px;
+    padding-left: 75px;
+    font-size: larger;
+    display: block;
+}
+span{
+    font-size: small;
+    padding-top: 0px;
+}
+.Stop{
+ font-size: small;
+}
+
+
+#Ann1 {
+    padding-right: 10px;
+    float: left;
+}
+#Ann2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+}
+h1{
+    font-size: 60px;
+    color: green;
+    margin: 0px;
+}
+#l{
+    margin-top: 5px;
+}
+.pad{
+    padding-top: 80px;
+}
+.hidden{
+    display: none;
+}
+#submit{
+    cursor: pointer;
+}
+
+#numberSelector{
+    width: 125px;
+}
+.block1{
+display: flex;
+}
+.block2{
+    display: flex;
+    }
+.element1{
+    margin-right: 20px;
+}
+.element2{
+    flex: 1;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Life Calculator Entry Page</title>
+    
+    <!-- link to favicon -->
+    <link rel="icon" href="https://cdn.onlinewebfonts.com/svg/img_380402.png">
+    <!-- links to js and css -->
+    <link href="./Resources/css/index.css" type="text/css" rel="stylesheet">
+    <script src="./Resources/js/LifeTime.js"></script>
+    <script src="./Resources/js/CustomAnn.js"></script>
+    <script src="./Resources/js/DefaultAnn.js"></script>
+    <script src="./Resources/js/Methods.js"></script>
+    </head>
+	
+    <body>
+   
+      <h1>LifeTime</h1>
+      <br>
+      <!-- a form  made to submit data to a php page-->
+      <span>Submit your data to me! *use green button before clicking submit</span>
+      <form method="get" name="form" action="./Resources/php/index.php">
+        <input type="text" placeholder="Enter Name" name="inputedUsername" required>
+        <input type='email' placeholder="Enter Email" name="inputedEmail" required>
+        <div class="hidden">
+        <input type='text'  id="sendBirthDate" name="birthDate" >
+        <input type="text"  name="lifetimeInMi" id="lifetimeInMi" >
+        <input type='text'  id="registeredDate" name="registeredDate" >
+        <input type="text" name="birthHour" id="sendBirthHour">
+        <input type="submit" button id="submit">
+      </div>
+        <button onclick="user.send()">Submit</button>
+     </form>
+     
+
+     <div class="block1">
+      <!-- an input for the birth date and a button to to get your lifetime in various time values -->
+      <div class="element1">
+      <span>Fill in the birth date to use this program.</span>
+      <br>
+      <input type="date" placeholder="Enter Birth Date" id="birthDate" required>
+      <br>
+      <button onclick="lifeTimeGet()" class="Green">Click To Get Your LifeTime</button>
+      <br>
+      <br>
+    </div>
+     <!-- an input for the birth time and a button to remove stuff that's already been displayed-->
+    <div class="element2">
+      <span>Optionally fill in your birth hour for accuracy.</span>
+      <br>
+      <input type="time" placeholder="Enter Specific Birth Time" id="birthHour" required>
+      <br>
+      <button onclick="user.removeClutter()" id="Red">Click To Remove The Clutter</button>
+      <br>
+      
+      <br>
+    </div>
+    </div>
+<div class="block2">
+  <!-- input for the custom anniversary function-->
+  <div class="element1">
+ <span>Input a custom Anniverary here</span>
+ <br>
+<input type="number" id="numberSelector" >
+<select id="timeValueSelector">
+  <option value="second">Seconds</option>
+  <option value="minute">Minutes</option>
+  <option value="hour">Hours</option>
+  <option value="day">Days</option>
+  <option value="week">Weeks</option>
+  <option value="month">Months</option>
+  <option value="year">Years</option>
+  
+</select>
+<br>
+      <button onclick="getCustomAnn()" class="Green">Click For Custom Anniversary Time!</button>
+  </div>
+    
+<!-- input for the mystery anniversary button (I have no short way how to describe this function so I just slapped the word mystery onto it)-->
+      <div class="element2">
+      <span>Click it for fun!</span>
+      <br>
+      <span>Mystery Anniverary Button</span>
+      <br>
+      <button onclick="weirdFunctionTheTeacherRequestedToMake()" id="l" class="Green">Click For Anniversary Time!</button>
+    </div>
+    </div>
+ <div class="pad">
+
+ </div>
+     
+
+    </body>
+</html>
